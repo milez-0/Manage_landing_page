@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply text-white text-base bg-primary py-3 px-8 rounded-full cursor-pointer shadow-2xl shadow-primary font-bold;
+}
+.par {
+  @apply text-lg lg:text-xl mr-0 mt-10;
+}
+.h-con {
+  @apply bg-secondary-300 lg:bg-gray-100 py-2 md:text-2xl text-xl text-secondary-100 font-bold ml-2 mt-20;
+}
+.num {
+  @apply bg-primary text-2xl text-white py-3 px-6 rounded-full mr-8 w-full;
+}
+.icon {
+  @apply w-10 lg:w-8;
+}
