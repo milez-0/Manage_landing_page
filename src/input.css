@@ -19,3 +19,9 @@
 .sizeAdjust {
   @apply invisible lg:visible;
 }
+.hov {
+  @apply hover:opacity-60;
+}
+.chov {
+  @apply hover:text-primary;
+}
