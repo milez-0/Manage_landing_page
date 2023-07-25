@@ -17,7 +17,8 @@ module.exports = {
         sm: ['0.875rem', { lineHeight: '1.25rem' }],
         base: ['1rem', { lineHeight: '1.5rem' }],
         lg: ['1.05rem', { lineHeight: '1.75rem' }],
-        blg: ['1.25rem', { lineHeight: '1.75rem' }],
+        blg: ['0.95rem', { lineHeight: '1.75rem' }],
+        sxl: ['1.15rem', { lineHeight: '2rem' }],
         xl: ['1.35rem', { lineHeight: '2.2rem' }],
         '2xl': ['1.5rem', { lineHeight: '2rem' }],
         '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
@@ -28,7 +29,7 @@ module.exports = {
         '8xl': ['6rem', { lineHeight: '1' }],
         '9xl': ['8rem', { lineHeight: '1' }],
         '4sl': ['2.6rem', { lineHeight: '3.5rem' }],
-        '2sl': ['1.4rem', { lineHeight: '2rem' }],
+        '2sl': ['1.2rem', { lineHeight: '2rem' }],
       },
       boxShadow: {
         sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
@@ -61,6 +62,7 @@ module.exports = {
         md: '28rem',
         lg: '32rem',
         xl: '36rem',
+        cusw: '600px',
         '2xl': '42rem',
         '3xl': '48rem',
         '4xl': '56rem',
@@ -99,7 +101,10 @@ module.exports = {
       },
       fontfamily: {
         'myfont': ['Be Vietnam Pro'],
-      }
+      },
+      width: ({
+        cus: '50%',
+      }),
     },
   },
   plugins: [],
