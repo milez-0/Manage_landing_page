@@ -103,7 +103,7 @@ module.exports = {
         'myfont': ['Be Vietnam Pro'],
       },
       width: ({
-        cus: '50%',
+        cus: '490px',
       }),
     },
   },
