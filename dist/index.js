@@ -1,10 +1,14 @@
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#menu');
+const overlay = document.querySelector('#overlay');
+const toggleOverlayClose = document.querySelector('#close-overlay');
+const toggleOverlayOpen = document.querySelector('#burger');
 
-burger.addEventListener('click', () => {
-  if (menu.classList.contains('hidden')) {
-    menu.classList.remove('hidden');
-  }else {
-    menu.classList.add('hidden');
-  }
-})
+toggleOverlayOpen.addEventListener('click', () => {
+  overlay.classList.toggle('show-overlay');
+  overlay.classList.toggle('hide-overlay');
+});
+
+toggleOverlayClose.addEventListener('click', () => {
+  overlay.classList.toggle('hide-overlay');
+  overlay.classList.toggle('show-overlay');
+});
+

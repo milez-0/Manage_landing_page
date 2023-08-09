@@ -10,7 +10,8 @@ module.exports = {
           200: 'rgb(144, 149, 167)',
           300: 'rgba(242, 95, 58, 0.2)',
           400: 'rgb(29, 30, 37)',
-        }
+        },
+        transGray: 'rgba(50, 50, 50, 0.5)',
       },
       fontSize: {
         xs: ['0.75rem', { lineHeight: '1rem' }],

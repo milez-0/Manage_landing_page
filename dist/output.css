@@ -528,6 +528,10 @@ video {
   position: static;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -536,8 +540,16 @@ video {
   position: relative;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .-top-10{
   top: -2.5rem;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .m-auto{
@@ -565,6 +577,10 @@ video {
 
 .mb-14{
   margin-bottom: 3.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mb-20{
@@ -794,11 +810,6 @@ video {
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-pink-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
 
 .bg-primary{
@@ -1092,8 +1103,82 @@ video {
   color: rgb(242 95 58 / var(--tw-text-opacity));
 }
 
+.pop-nav{
+  width: 20rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(36 45 82 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .pop-nav{
+    display: none;
+  }
+}
+
+.nav{
+  display: none;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(36 45 82 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .nav{
+    display: flex;
+  }
+}
+
+.show-overlay{
+  position: fixed;
+  inset: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+@media (min-width: 768px){
+  .show-overlay{
+    display: none;
+  }
+}
+
+.hide-overlay{
+  display: none;
+}
+
 .hover\:fill-primary:hover{
   fill: rgb(242, 95, 58);
+}
+
+.hover\:text-primary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(242 95 58 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-60:hover{
+  opacity: 0.6;
 }
 
 @media (min-width: 640px){
@@ -1114,10 +1199,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:relative{
-    position: relative;
-  }
-
   .md\:order-first{
     order: -9999;
   }
